@@ -1,5 +1,8 @@
 body {
-  font-family: Verdana, Arial, sans-serif;
+
+  <link rel="stylesheet" href="https://fonts.google.com/share?selection.family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000">
+  font-family: "Sofia Sans", sans-serif;
+ 
   font-size: 1rem;
   color: black;
   margin: 0;
@@ -67,6 +70,8 @@ a:hover {
 
 section {
   margin-bottom: 4rem;
+  margin-left: 250px;
+  margin-right: 250px;
 }
 
 h2 {
@@ -89,7 +94,7 @@ select {
   margin-bottom: 1.5rem;
   border: 1px solid #ccc;
   border-radius: 0.5rem;
-  background-color: #fdfdfd;
+  background-color: #007aa717;
 }
 
 button {
