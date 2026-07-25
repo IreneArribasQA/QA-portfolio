@@ -134,6 +134,72 @@ thead {
   background-color: #f4f4f4;
 }
 
+    emoji {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.emoji span {
+  position: absolute;
+  top: -10%;
+  font-size: 2rem;
+  animation: caer 10s linear infinite;
+}
+
+.emoji span:nth-child(1) {
+  left: 10%;
+  animation-duration: 8s;
+}
+
+.emoji span:nth-child(2) {
+  left: 30%;
+  animation-duration: 12s;
+}
+
+.emoji span:nth-child(3) {
+  left: 50%;
+  animation-duration: 10s;
+}
+
+.emoji span:nth-child(4) {
+  left: 70%;
+  animation-duration: 14s;
+}
+
+.emoji span:nth-child(5) {
+  left: 90%;
+  animation-duration: 9s;
+}
+@keyframes caer {
+  0% {
+    transform: translateY(-100px) rotate(0deg);
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(110vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+  @media (max-width: 600px) {
+  .emoji span {
+    font-size: 1.1rem;
+  }
+
+  .emoji span:nth-child(n+5) {
+    display: none; 
+  }
+  }
+
 /* Móvil */
 @media (max-width: 768px) {
   th, td {
@@ -141,5 +207,3 @@ thead {
     padding: 4px;
   }
 }
-
-
